@@ -1,38 +1,223 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700&display=swap');
+:root{
+--sidebar-flex:1.5;
+--condiv-flex:6;
+--fontsize-p:1.2rem;
+--fontsize-nav:1.6rem;
+--typing-font:3rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*
+{
+margin:0;
+padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body
+{
+font-family: 'Raleway';
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.App
+{
+display: flex;
+width: 100vw;
+min-height: 100vh;
+}
+
+/* .condiv class is for the right side content container*/
+.condiv
+{
+padding: 100px ;
+background-color: #f4f5f9;
+flex:var(--condiv-flex);
+}
+
+nav
+{
+padding:60px 30px 0px 30px ;
+flex:var(--sidebar-flex);
+background-color:#1B4F72;
+background-size: cover;
+}
+
+nav ul
+{
+  font-size:var(--fontsize-nav) ;
+  list-style-type: none;
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+nav ul li
+{
+  margin:40px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav ul li a
+{
+  color: #FFF;
+}
+
+
+.active
+{
+font-weight: bolder;
+}
+
+.social
+{
+position: absolute;
+margin-top: 20px;
+display: flex;
+bottom: 60px;
+padding-left: 425px;
+padding-right: 500px;
+}
+
+.social i
+{
+padding-right: 30px;
+font-size: 25px;
+color: #a2a3a3;
+}
+
+.social i:hover
+{
+color: #d3d1d1;
+}
+
+.profilepic
+{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  display: block;
+  padding-bottom: 20px;
+  margin: auto;
+}
+
+.profilepic:hover
+{
+  height: 300px;
+  width: 300px;
+}
+
+.typingeffect
+{
+  text-align: center;
+  display: block;
+  font-size: 30px;
+}
+
+.subtopic
+{
+margin:10px 10px 30px 10px !important;
+}
+
+p
+{
+font-size: var(--fontsize-p);
+}
+
+h1,h2,h3,p
+{
+margin: 10px;
+}
+
+h4,h5
+{
+margin: 10px;
+font-weight: normal;
+}
+
+.widecard
+{
+border:1px solid #9a9b9c;
+display: flex;
+margin:30px 0px 30px 0px;
+}
+
+.widecard:hover
+{
+color: #1b1d20;
+background-color: #ffffff;
+box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.projects
+{
+padding: 20px ;
+background-color: #ffffff;
+flex:var(--condiv-flex);
+display: flex;
+}
+
+.maincomponent {
+  position: relative;
+  width: 250px;
+  height: 320px;
+  display: flex;
+  padding: 10px;
+  margin-right: 15px;
+}
+
+.maincomponent img {
+  width: 260px;
+  height: 150px;
+  margin: 5px;
+}
+
+.thecard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+
+.thecard:hover {
+  transform: rotateY(180deg);
+}
+
+.thefront {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: #ffc728;
+  color: #333;
+  text-align: center;
+  font-family: 'zilla slab', sans-serif;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.theback {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: #D5D8DC;
+  color: #333;
+  text-align: center;
+  font-family: 'zilla slab', sans-serif;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  transform: rotateY(180deg);
+}
+
+.resume
+{
+padding: 100px ;
+background-color: #f4f5f9;
+flex:var(--condiv-flex);
+}
+
+.resume resumeButton {
+  padding: 100px ;
 }
