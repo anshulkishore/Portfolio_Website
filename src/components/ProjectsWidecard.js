@@ -6,7 +6,7 @@ class ProjectsWidecard extends Component {
             <div class="maincomponent">
                 <div class="thecard">
                     <div class="thefront">
-                        <img src={this.props.image} />
+                        <img src={this.props.image} alt="project thumbnail" />
                         <h3>{this.props.title}</h3>
                         <h4 class="secondtext">{this.props.tech}</h4>
                         <h4 class="secondtext" style={{
