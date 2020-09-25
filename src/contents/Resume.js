@@ -21,7 +21,7 @@ class Resume extends Component {
                         type="button" 
                         onClick={(e) => {
                         e.preventDefault();
-                        window.open("https://drive.google.com/file/d/1PicCC-lpXAz7wa8A9732_1InIjr5BgBa/view?usp=sharing");
+                        window.open("https://drive.google.com/file/d/1SiJTEa3Jazj4a_jlGstKwcoKAO-uTLIU/view");
                         }}>Resume</button>
                 </div>
               
